@@ -42,7 +42,7 @@ npx cypress run
 Run a single spec:
 
 ```bash
-npx cypress run --spec "cypress/e2e/ui-evolution-test.cy.js"
+npx cypress run --spec "cypress\e2e\ui-evolution-test.cy.js" --browser chrome
 ```
 
 ## Project structure
