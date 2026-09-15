@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+///<reference types="cypress" />
 ///<reference types="cypress-iframe" />
 
 it.only('Test1', () => {
@@ -13,7 +13,6 @@ it.only('Test1', () => {
     cy.contains('[class="enter"]', 'Yes, I am 18+', { timeout: 5000 }).click()
 
     //open Bounty Raid game
-    //cy.get('[aria-label="5 / 12"] > .game-slider__slide-wrapper > .game-slider__image-wrapper > .game-slider__image', { timeout: 2000 }).click()
     cy.get('a[href*="bounty-raid"]', { timeout: 5000 }).click()
 
     //Start game
@@ -96,5 +95,3 @@ it.only('Test1', () => {
         .find('[class="statistics-field-value"]', { timeout: 15000 })
         .should('not.contain.text', "€10,000.00")
 })
-
-
