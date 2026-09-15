@@ -19,7 +19,6 @@ it.only('Test1', () => {
     cy.get('#start-game').click()
 
     //Get Frame
-    cy.frameLoaded('iframe[src*="showcase.evo-games.com"]', { timeout: 20000 })
     cy.frameLoaded('iframe[src*="showcase.evo-games.com/entry"]', { timeout: 15000 })
 
     //Click Play button
